@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.number {
+    border: 1px black solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number:hover {
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+#active {
+    background-color: lightblue;   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 100px;
+    border: 2px black solid;
+    width: 100%;
+}
+
+.search, .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+.searchInput {
+    display: flex;
+    align-items: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("thunderstorm-3440450_1920.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;   
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.resultContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.inputContainer {
+    background-color: rgba(211, 211, 211, 0.4);
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.searchInput {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.searchInput input, .searchInput button {
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 10px;
+}
