@@ -113,3 +113,9 @@ body {
     padding: 5px;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 950px) {
+    .inputContainer {
+        width: 100%;
+    }
+}
