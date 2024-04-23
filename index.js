@@ -8,18 +8,23 @@ window.addEventListener("keydown", (event) => {
 })
 
 async function search() {
-    try {
-        const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${APIKey}`
-        );
-        const data = await response.json();
-        console.log(data)
-    } catch (error) {
-        console.log(error);
+    if(input.value != "") {
+        try {
+            const response = await fetch(
+            `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${APIKey}`
+            );
+            const data = await response.json();
+            console.log(data)
+        } catch (error) {
+            console.log(error);
+        }
+        input.value = "";
+    } else {
+        alert("Du musst eine Stadt eingeben >:-)")
     }
-  }
+}
 
-  async function city() {
+async function city() {
     try {
         const response = await fetch(
             "https://countriesnow.space/api/v0.1/countries"
@@ -29,4 +34,4 @@ async function search() {
     } catch (error) {
         console.log(error)
     }
-  }
+}
