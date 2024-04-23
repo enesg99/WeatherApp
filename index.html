@@ -14,10 +14,6 @@
 
     <div class="container">
 
-        <div class="resultContainer">
-            
-        </div>
-
         <div class="inputContainer">
             <h1>Willkommen!</h1>
             <h2>Starte hier deine Suche</h2>
@@ -25,6 +21,12 @@
                 <span class="material-symbols-outlined" style="font-size: 2rem;">location_on</span>
                 <input id="cityInput" placeholder="Gib hier eine Stadt ein...">
                 <button onclick="search()">Suchen</button>
+            </div>
+            <div class="resultcontainer">
+              <p>Stadt: <span id="cityname"></span></p>
+              <p>Temperatur: <span id="temp"></span></p>
+              <img class="mood" id="freeze" src="Images/freeze.jpg">
+              <img class="mood" id="sunny" src="Images/sun.jpg">
             </div>
         </div>
 

@@ -67,7 +67,7 @@ nav {
 }
 
 body {
-    background-image: url("images/fog-7760708_1920.jpg");
+    background-image: url("images/fog.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,10 +81,17 @@ body {
     flex-direction: row;
 }
 
-.resultContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
+.resultcontainer {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(13, 13, 13, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 12px 5px #6a2f61;
 }
 
 .inputContainer {
@@ -118,4 +125,14 @@ body {
     .inputContainer {
         width: 100%;
     }
+}
+
+.mood {
+    height: 70%;
+    padding: 10px;
+    display: none;
+}
+
+#freeze, #sunny {
+    border-radius: 25px;
 }
